@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/resultTextView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:onClick="StartMethod"
+        android:text="GO!"
+        android:textSize="80sp"
+        android:visibility="invisible"
+        tools:layout_editor_absoluteX="128dp"
+        tools:layout_editor_absoluteY="369dp" />
+
+
+
+    <GridLayout
+        android:layout_width="409dp"
+        android:layout_height="280dp"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="88dp">
+
+        <Button
+            android:id="@+id/button0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="0"
+            android:layout_rowWeight="1"
+            android:layout_column="0"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill"
+            android:background="#ED0B0B"
+            android:onClick="chooseAnswer"
+            android:tag="0"
+            android:text="3"
+            android:textSize="80sp"></Button>
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="0"
+            android:layout_rowWeight="1"
+            android:layout_column="1"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill"
+            android:background="#AC4848"
+            android:onClick="chooseAnswer"
+            android:tag="1"
+            android:text="3"
+            android:textSize="80sp"></Button>
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="1"
+            android:layout_rowWeight="1"
+            android:layout_column="0"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill"
+            android:background="#AC4848"
+            android:onClick="chooseAnswer"
+            android:tag="2"
+            android:text="3"
+            android:textSize="80sp"></Button>
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="1"
+            android:layout_rowWeight="1"
+            android:layout_column="1"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill"
+            android:background="#ED0B0B"
+            android:onClick="chooseAnswer"
+            android:tag="3"
+            android:text="3"
+            android:textSize="80sp"></Button>
+
+
+    </GridLayout>
+
+    <TextView
+        android:id="@+id/timerTextView"
+        android:layout_width="97dp"
+        android:layout_height="68dp"
+        android:background="@color/colorAccent"
+        android:text="   30s"
+        android:textSize="30sp"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="1dp" />
+
+    <TextView
+        android:id="@+id/sumTextView"
+        android:layout_width="64dp"
+        android:layout_height="50dp"
+        android:background="#ECC3C3"
+        android:text="13+12"
+        android:textColor="@android:color/background_dark"
+        android:textSize="22sp"
+        tools:layout_editor_absoluteX="171dp"
+        tools:layout_editor_absoluteY="9dp" />
+
+    <TextView
+        android:id="@+id/scoreTextView"
+        android:layout_width="71dp"
+        android:layout_height="51dp"
+        android:background="#9FAAE8"
+        android:text=" 0/0"
+        android:textSize="30sp"
+        tools:layout_editor_absoluteX="315dp"
+        tools:layout_editor_absoluteY="5dp" />
+
+    <TextView
+        android:id="@+id/resultTextView"
+        android:layout_width="219dp"
+        android:layout_height="53dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textSize="40sp"
+        tools:layout_editor_absoluteX="84dp"
+        tools:layout_editor_absoluteY="562dp" />
+
+    <Button
+        android:id="@+id/playAgainButton"
+        android:layout_width="138dp"
+        android:layout_height="43dp"
+        android:onClick="playAgain"
+        android:text="Play Again"
+        android:visibility="invisible"
+        tools:layout_editor_absoluteX="113dp"
+        tools:layout_editor_absoluteY="676dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
